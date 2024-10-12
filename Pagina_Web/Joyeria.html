@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Joyeria</title>
+</head>
+<body>
+    <!--------------------Encavesado-------------------->
+    <nav class="copy navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <img style="border-radius: 20px;" src="img/logoS.jpg" alt="Bootstrap" width="80">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!----------pagina principal---------->
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Joyeria.html">Home</a>
+                    </li>
+                    <!----------demostracion de productos---------->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Mas_Vendidos">Mas Vendidos</a>
+                    </li>
+                    <!----------busqueda por categoria---------->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Categoria">Categoria</a>
+                    </li>
+                    <!----------buscar por joyas---------->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Joyas
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Anillos</a></li>
+                            <li><a class="dropdown-item" href="#">Collares</a></li>
+                            <li><a class="dropdown-item" href="#">Pulseras</a></li>
+                            <li><a class="dropdown-item" href="#">tobilleras</a></li>
+                            <li><a class="dropdown-item" href="#">piercings</a></li>
+                            <li><a class="dropdown-item" href="#">Relojes</a></li>
+                            <li><a class="dropdown-item" href="#">Pendientes</a></li>
+                            <li><a class="dropdown-item" href="#">Broches</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Mas ...</a></li>
+                        </ul>
+                    </li>
+                    <!----------buscar por gemas---------->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Gemas
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Diamantes</a></li>
+                            <li><a class="dropdown-item" href="#">Esperaldas</a></li>
+                            <li><a class="dropdown-item" href="#">Tanzanitas</a></li>
+                            <li><a class="dropdown-item" href="#">Zafiros</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Mas ...</a></li>
+                        </ul>
+                    </li>
+                    <!----------acerca de---------->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Acerca de ...
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="acerca_nosotros.html">Nosotros</a></li>
+                            <li><a class="dropdown-item" href="contacto.html">Contacto</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!----------buscar algo en espesifico---------->
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button style="font-weight: bold; border-width: 3px;" class="btn btn-outline-success" type="submit">Buscar</button>
+                  </form>
+            </div>
+        </div>
+    </nav>
+<div class="degradado">
+    <!--------------------Reproduccion de Imajenes-------------------->
+    <div class="reproduccion_imagenes">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/joyeria2.jpg" width="1450" height="600" alt="...">
+                <div class="carousel-caption d-block">
+                <h1 class="text-center" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);">Joyeria Estellar</h1><br>
+                <p class="texto">Encuentra los mejores productos en nuestra tienda</p>
+                </div>
+            </div>
+        
+            <div class="carousel-item">
+                <img src="img/joyas2.jpg" width="1450" height="600" alt="...">
+                <div class="carousel-caption d-block">
+                <p class="texto">Con las mejores joyas que puedes encontrar</p>
+                </div>
+            </div>
+        
+            <div class="carousel-item">
+                <img src="img/pila_joyas2.jpg" width="1450" height="600" alt="...">
+                <div class="carousel-caption d-block">
+                <p class="texto">Con los mejoes cortes de gemas que puedes encontrar</p>
+                </div>
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span> 
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!--------------------Mas Vendidos-------------------->
+    <div id="Mas_Vendidos" class="mas_vendidos">
+        <div class="container my-5">
+            <div class="row">
+                <!-- ---------- Diálogo (Izquierda) ------------>
+                <div class="col-md-4">
+                    <h2 class="text-center">Mas Vendidos</h2><br>
+                    <p style="font-size: 1.2rem;">Conoce nuestros productos más buscados y más vendidos.</p>
+                </div>
+                <div class="col-md-1">
+
+                </div>
+                <!-- ---------- Carrusel (Derecha) ---------- -->
+                <div class="col-md-7">
+                    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                        <!---------- Indicadores del carrusel---------->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <!---------- Contenedor de los elementos del carrusel ---------->
+                        <div class="carousel-inner">
+                            <!---------- Primera Diapositiva ---------->
+                            <div class="carousel-item active">
+                                <div class="d-flex justify-content-center">
+                                    <!-- Tarjeta 1 -->
+                                    <div class="card me-3" style="width: 18rem;">
+                                        <img src="img/aretes_esmeralda.jpg" class="card-img-top" alt="Imagen 1">
+                                        <div class="card-body">
+                                            <p class="card-text">
+                                                $1,400
+                                            </p>
+                                            <p class="card-text">
+                                                Aretes colgantes con esmeraldas
+                                            </p><br>
+                                            <a href="#" class="card-link">Mas Informacion...</a>
+                                        </div>
+                                    </div>
+                                    <!-- Tarjeta 2 -->
+                                    <div class="card me-3" style="width: 18rem;">
+                                        <img src="img/dije_plata_delfines.jpg" class="card-img-top" alt="Imagen 2">
+                                        <div class="card-body">
+                                            <p class="card-text">
+                                                $400
+                                            </p>
+                                            <p class="card-text">
+                                                Dije de plata delfines encontrados
+                                            </p><br>
+                                            <a href="#" class="card-link">Mas Informacion...</a>
+                                        </div>
+                                    </div>
+                                    <!-- Tarjeta 3 -->
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="img/pulsera_diamantes.jpg" class="card-img-top" alt="Imagen 3">
+                                        <div class="card-body">
+                                            <p class="card-text">
+                                                $300
+                                            </p>
+                                            <p class="card-text">
+                                                Pulsera con diamantes de imitacion
+                                            </p>
+                                            <a href="#" class="card-link">Mas Informacion...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---------- Segunda Diapositiva ---------->
+                            <div class="carousel-item">
+                                <div class="d-flex justify-content-center">
+                                    <!-- Tarjeta 1 -->
+                                    <div class="card me-3" style="width: 18rem;">
+                                        <img src="img/collar_corazon.jpg" class="card-img-top" alt="Imagen 1">
+                                        <div class="card-body">
+                                            <p class="card-text">
+                                                $500
+                                            </p>
+                                            <p class="card-text">
+                                                Collar con dije de corazon
+                                            </p><br>
+                                            <a href="#" class="card-link">Mas Informacion...</a>
+                                        </div>
+                                    </div>
+                                    <!-- Tarjeta 2 -->
+                                    <div class="card me-3" style="width: 18rem;">
+                                        <img src="img/conjunto.jpg" class="card-img-top" alt="Imagen 2">
+                                        <div class="card-body">
+                                            <p class="card-text">
+                                                $700
+                                            </p>
+                                            <p class="card-text">
+                                                Conjunto de joyeria con aretes, collar y pulsera
+                                            </p>
+                                            <a href="#" class="card-link">Mas Informacion...</a>
+                                        </div>
+                                    </div>
+                                    <!-- Tarjeta 3 -->
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="img/dije_suerte.jpg" class="card-img-top" alt="Imagen 3">
+                                        <div class="card-body">
+                                            <p class="card-text">
+                                                $500
+                                            </p>
+                                            <p class="card-text">
+                                                Pulsera con dijes de la suerte plata
+                                            </p><br>
+                                            <a href="#" class="card-link">Mas Informacion...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---------- Tercera Diapositiva ---------->
+                            <div class="carousel-item">
+                                <div class="d-flex justify-content-center">
+                                    <!-- Tarjeta 1 -->
+                                    <div class="card me-3" style="width: 18rem;">
+                                        <img src="img/aretes_tortuga.jpg" class="card-img-top" alt="Imagen 1">
+                                        <div class="card-body">
+                                            <p class="card-text">
+                                                $1,000
+                                            </p>
+                                            <p class="card-text">
+                                                Aretes de tortuga verde plata
+                                            </p><br>
+                                            <a href="#" class="card-link">Mas Informacion...</a>
+                                        </div>
+                                    </div>
+                                    <!-- Tarjeta 2 -->
+                                    <div class="card me-3" style="width: 18rem;">
+                                        <img src="img/aretes_rosa.png" class="card-img-top" alt="Imagen 2">
+                                        <div class="card-body">
+                                            <p class="card-text">
+                                                $35,000
+                                            </p>
+                                            <p class="card-text">
+                                                Aretes pendientes oro 18% con forma de rosa 
+                                            </p>
+                                            <a href="#" class="card-link">Mas Informacion...</a>
+                                        </div>
+                                    </div>
+                                    <!-- Tarjeta 3 -->
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="img/conjunto_cristal.jpg" class="card-img-top" alt="Imagen 3">
+                                        <div class="card-body">
+                                            <p class="card-text">
+                                                $500
+                                            </p>
+                                            <p class="card-text">
+                                                Conjunto de cristal con aretes y collar
+                                            </p><br>
+                                            <a href="#" class="card-link">Mas Informacion...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!---------- Controles del carrusel ---------->
+                        <button class="carousel-control-prev ccp" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next ccn" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------------------Categoria-------------------->
+    <div id="Categoria" class="categoria">
+        <div class="container mt-4">
+            <h2 class="text-center">Categoria</h2>
+            <div class="row row-cols-2 row-cols-md-4 g-4 text-center mt-4">
+                
+            <div class="col">
+                <div class="card category-card c-c">
+                    <img src="img/anillos.jpg" alt="Anillos">
+                    <div class="overlay"></div> <!-- Overlay sobre la imagen -->
+                    <a href="#" class="card-link">Anillos</a>
+                </div>
+            </div>
+        
+            <div class="col">
+                <div class="card category-card c-c">
+                <img src="img/aretes.jpeg" alt="Aretes">
+                <div class="overlay"></div> <!-- Overlay sobre la imagen -->
+                <a href="#" class="card-link">Aretes</a>
+                </div>
+            </div>
+        
+            <div class="col">
+                <div class="card category-card c-c">
+                <img src="img/dijes.jpg" alt="Dijes">
+                <div class="overlay"></div> <!-- Overlay sobre la imagen -->
+                <a href="#" class="card-link">Dijes</a>
+                </div>
+            </div>
+        
+            <div class="col">
+                <div class="card category-card c-c">
+                <img src="img/joyeria_personalizada.jpg" alt="Joyería Personalizada">
+                <div class="overlay"></div> <!-- Overlay sobre la imagen -->
+                <a href="#" class="card-link">Joyería Personalizada</a>
+                </div>
+            </div>
+        
+            <div class="col">
+                <div class="card category-card c-c">
+                <img src="img/pulsera.jpg" alt="Pulseras">
+                <div class="overlay"></div> <!-- Overlay sobre la imagen -->
+                <a href="#" class="card-link">Pulseras</a>
+                </div>
+            </div>
+        
+            <div class="col">
+                <div class="card category-card c-c">
+                <img src="img/collar.jpg" alt="Collares">
+                <div class="overlay"></div> <!-- Overlay sobre la imagen -->
+                <a href="#" class="card-link">Collares</a>
+                </div>
+            </div>
+        
+            <div class="col">
+                <div class="card category-card c-c">
+                <img src="img/reloj.jpg" alt="Relojes">
+                <div class="overlay"></div> <!-- Overlay sobre la imagen -->
+                <a href="#" class="card-link">Relojes</a>
+                </div>
+            </div>
+        
+            <div class="col mas">
+                <div class="card category-card">
+                    <a href="#" class="card-link link">Mas...</a>
+                </div>
+            </div>
+        
+            </div>
+        </div>
+    </div>
+
+    <!--------------------Pregutas Frecuentes-------------------->
+    <div>
+        <h2 class="text-center">Pregutas Frecuentes</h2>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button style="font-weight: bold;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Política de devolución
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        Para proceder al cambio solicitado las piezas deben devolverse en un estado nuevo y sin usar, en perfectas condiciones, así como con el empaque original y ticket de compra.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button style="font-weight: bold;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        ¿Con cuáles certificaciones cuentan?
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <p>Applied jewelry professional course by GIA</p>
+                        <p>Discover the gemstones by École des Arts Joailliers</p>
+                        <p>Amulets & precious symbols by École des Arts Joailliers</p>
+                        <p>Having access to van cleef & arpels creations by École des Arts Joailliers</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button style="font-weight: bold;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        ¿Cuáles son sus tiempos de entrega?
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        Si el articulo no esta en stock permítenos de 2-3 semanas para su entrega. Para confirmar los plazos de entrega de un artículo en particular, comuníquese con nuestro equipo de atención al cliente a ventas@estellar.mx
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!--------------------Copyright-------------------->
+    <div class="copyright">
+        <footer class="copy d-flex justify-content-between align-items-center p-3 footer-section">
+            <!-- Íconos alineados a la derecha -->
+            <div class="footer-icons">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+                <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                <path d="M16.5 7.5l0 .01" />
+              </svg>
+          
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+              </svg>
+            </div>
+            <!-- Texto alineado a la izquierda -->
+            <p class="footer-text">© Todos los derechos reservados a Joyeria Estellar 2024.</p>
+        </footer>
+    </div>
+
+    <!------------java script-------------------->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

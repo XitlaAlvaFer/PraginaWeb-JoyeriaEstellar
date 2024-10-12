@@ -1,0 +1,235 @@
+
+/*-------------------------------------------------------------------------------------*/
+.copy{
+    background-color: rgb(255,225,147);
+    font-size: 1.5rem; 
+    margin: 0;
+}
+
+.degradado {
+    background: linear-gradient(rgb(179,169,169), white);
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/*--------------------Reproduccion de Imajenes--------------------*/
+/* Estilos generales*/
+.texto{
+    font-size: 2rem;
+    font-weight: bold; 
+    color: white; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+.reproduccion_imagenes .carousel-inner img {
+    width: 100%;
+    height: auto;
+}
+
+.reproduccion_imagenes h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+.reproduccion_imagenes .texto {
+    font-size: 1.5rem;
+}
+
+/* Media Query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .reproduccion_imagenes h1 {
+        font-size: 2rem;
+    }
+
+    .reproduccion_imagenes .texto {
+        font-size: 1rem;
+    }
+
+    .reproduccion_imagenes .carousel-inner img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Media Query para pantallas muy pequeñas*/
+@media (max-width: 576px) {
+    .reproduccion_imagenes h1 {
+        font-size: 1.5rem; 
+    }
+
+    .reproduccion_imagenes .texto {
+        font-size: 0.875rem; 
+    }
+
+    .reproduccion_imagenes .carousel-inner img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+/*--------------------Mas Vendidos--------------------*/
+/* Estilos generales */
+.card {
+    margin: 10px;
+}
+
+.ccp {
+    width: 5%;
+    left: -5%; /* Mueve el botón de 'anterior' a la izquierda */
+}
+
+.ccn {
+    width: 5%;
+    right: -5%; /* Mueve el botón de 'siguiente' a la derecha */
+}
+
+.carousel-inner {
+    display: flex;
+    align-items: center; /* Centrar las cartas verticalmente */
+}
+
+.carousel-indicators {
+    margin-bottom: -17.5px; /* Agregar espacio entre el carrusel y los indicadores */
+}
+
+.col-md-4 {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .mas_vendidos .text-column {
+        order: 1;
+    }
+    .mas_vendidos .carousel-column {
+        order: 2;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Cambiar la dirección del flex a columna para las tarjetas del carrusel */
+    .mas_vendidos .carousel-inner .d-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Ajustar el ancho de las tarjetas para que ocupen el 100% */
+    .mas_vendidos .carousel-inner .card {
+        width: 100% !important;
+        max-width: 300px; /* Opcional: limitar el ancho máximo */
+        margin-bottom: 1rem; /* Espacio entre tarjetas */
+    }
+
+    /* Opcional: Centrar el texto */
+    .mas_vendidos .text-center {
+        text-align: center !important;
+    }
+}
+
+/*--------------------Categoría--------------------*/
+/* Estilos generales para las tarjetas */
+.c-c {
+    text-align: center;
+    border: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.c-c img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Estilos para el enlace sobre la imagen */
+.c-c a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Overlay para las imágenes dentro de la clase categoria */
+.categoria .c-c .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para la clase 'mas' */
+.mas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .categoria .row {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas por fila */
+    }
+
+    .categoria .col {
+        flex: 0 0 50%; /* Cada tarjeta ocupa el 50% del ancho */
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    .categoria .row {
+        grid-template-columns: repeat(1, 1fr); /* Una columna por fila */
+    }
+
+    .categoria .col {
+        flex: 0 0 100%; /* Cada tarjeta ocupa el 100% del ancho */
+        max-width: 100%;
+    }
+}
+
+/* -------------------- Copyright -------------------- */
+/* Estilos por defecto */
+.copyright .footer-section {
+    flex-direction: row;
+}
+
+@media (max-width: 768px) {
+    .copyright .footer-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .copyright .footer-icons {
+        margin-bottom: 10px;
+    }
+
+    .copyright .footer-text {
+        order: -1; /* Poner el texto antes de los íconos */
+    }
+}
